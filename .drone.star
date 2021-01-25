@@ -17,7 +17,7 @@ def main(ctx):
   linux_cxx("TEST_CMAKE=TRUE Job 0", "g++", packages="", buildtype="88140f0f85-2319b6d45f", buildscript="drone", image=linuxglobalimage, environment={'TEST_CMAKE': 'TRUE', 'DRONE_JOB_UUID': 'b6589fc6ab'}, globalenv=globalenv),
   linux_cxx("TOOLSET=gcc COMPILER=g++ CXXSTD=c++11 Job 1", "g++", packages="", buildtype="boost", buildscript="drone", image=linuxglobalimage, environment={'TOOLSET': 'gcc', 'COMPILER': 'g++', 'CXXSTD': 'c++11', 'DRONE_JOB_UUID': '356a192b79'}, globalenv=globalenv),
   linux_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=c++11 Job 2", "clang++", packages="", buildtype="boost", buildscript="drone", image=linuxglobalimage, environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': 'c++11', 'DRONE_JOB_UUID': 'da4b9237ba'}, globalenv=globalenv),
-  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=c++11 Job 3", "clang++", packages="", buildtype="boost", buildscript="drone", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': 'c++11', 'DRONE_JOB_UUID': '77de68daec'}, globalenv=globalenv, xcode_version="11.3"),
+  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=c++11 Job 3", "clang++", packages="", buildtype="boost", buildscript="drone", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': 'c++11', 'DRONE_JOB_UUID': '77de68daec'}, globalenv=globalenv, xcode_version="9.4"),
     ]
 
 # from https://github.com/boostorg/boost-ci
